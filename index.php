@@ -23,11 +23,9 @@ curl_close($ch);
 </head>
 
 <main>
-    
+
     <section>
-        <img src="<?= $data["poster_url"] ?>" width="200" alt="Póster de <?=$data["title"]?>"
-        style="border-radius: 16px"
-        />
+        <img src="<?= $data["poster_url"] ?>" width="200" alt="Póster de <?= $data["title"] ?>" style="border-radius: 16px" />
     </section>
 
     <hgroup>
@@ -45,23 +43,30 @@ curl_close($ch);
     body {
         display: grid;
         place-content: center;
+        background-image: url("https://cdn.marvel.com/content/1x/a22.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: bisque;
     }
 
-    section{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
+        section {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
 
-    hgroup{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
-    img {
-        margin: 0 auto;
-    }
+        hgroup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            
+        }
+
+        img {
+            margin: 0 auto;
+        }
 </style>
 
 <!--  -->
